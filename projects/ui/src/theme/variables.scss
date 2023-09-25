@@ -1,0 +1,33 @@
+$primary:#46190f;
+$secondary:#d2ab67;
+$black:#1f1f1f;
+$white: #ffffff;
+
+$cbcolor-primary: (
+    20:#D2C9C7,
+    40:#AF9D99,
+    60:#8C716B,
+    80:#69453D,
+    100:#601B0C,
+    200:$primary,
+    300:#38140C
+);
+
+$cbcolor-secondary: (
+    10: #F2EEE7,
+    20: #EEE6D9,
+    40: #E7D7BC,
+    60: #E0C9A0,
+    80: #D9BA83,
+    100: $secondary,
+);
+
+$cbcolor-black: (
+    5:#f9f9f9,
+    10:#E9E9E9,
+    20:#CACACA,
+    40:#9F9F9F,
+    60:#757575,
+    80:#4A4A4A,
+    100:$black,
+);

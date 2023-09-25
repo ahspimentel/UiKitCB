@@ -1,0 +1,53 @@
+@import "../../../theme/variables.scss";
+
+@mixin btn-type($bg){
+    background: $bg;
+    &:hover{
+        background: darken($bg,10%);
+        transition: all 0.3s ease;
+    }
+    &:active{
+        background: darken($bg,20%);
+    }
+}
+
+button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border: none;
+    border-radius: 6px;
+}
+
+button.fullwidth{
+    width: 100%;
+}
+
+
+button.primary{
+    @include btn-type($primary);
+    color:#fff;
+}
+
+button.secondary{
+    @include btn-type(map-get($cbcolor-secondary,60));
+    color: $primary;
+}
+
+button.tertiary{
+    @include btn-type(map-get($cbcolor-black, 5));
+    color:$primary;
+}
+
+button.sm{
+    padding: .5rem 1rem;
+}
+
+button.rg{
+    padding: .75rem 1rem;
+}
+
+button.lg{
+    padding: 1rem 2rem;
+}
